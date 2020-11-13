@@ -1,0 +1,72 @@
+:root {
+    --color-secondary: #586069;
+    --color-secondary-white: #ffffffb3;
+    --color-nav-search-border-color: #444d56;
+    --color-nav-bg-color: #24292e;
+    --color-white: #ffffff;
+
+    --color-border-primary: #e1e4e8;
+    --color-border-secondary: #eaecef;
+    --color-border-tertiary: #d1d5da;
+    --color-text-primary: #24292e;
+    --color-input-border: #e1e4e8;
+    --color-shadow-inset: inset 0 1px 0 rgba(225,228,232,0.2);
+    --color-border-overlay: #e1e4e8;
+    --color-border-inverse: #fff;
+    --color-border-info: #0366d6;
+    --color-border-danger: #d73a49;
+    --color-border-success: #34d058;
+    --color-border-warning: #f9c513;
+    --color-underlinenav-text: #24292e;
+    --color-underlinenav-text-hover: #24292e;
+    --color-underlinenav-text-active: #24292e;
+    --color-underlinenav-counter-text: #24292e;
+    --color-counter-bg: rgba(209, 213, 218, 0.5);
+    --color-repo-name: #0366d6;
+    --color-repo-svg: #6a737d;
+}
+
+.sticky {
+    position: sticky;
+    background: white;
+    top: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.rounded {
+    border-radius: 50% !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+.text-600 {
+    font-weight: 600;
+}

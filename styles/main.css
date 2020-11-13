@@ -1,0 +1,387 @@
+@import url(./helpers.css);
+
+@import url(./responsive.css);
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+nav.main-nav {
+  background-color: var(--color-nav-bg-color);
+  padding: 16px;
+  font-size: 14px;
+}
+
+nav .nav {
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav .nav .logo-con a svg path {
+  fill: var(--color-white);
+}
+
+nav .nav .logo-con a svg path:hover {
+  fill: var(--color-secondary-white);
+}
+
+.input-con {
+  align-items: center;
+  border: 1px solid var(--color-nav-search-border-color);
+  padding: 4px 8px;
+  margin-left: 20px;
+  font-size: inherit;
+  border-radius: 7px;
+}
+
+.input-con input {
+  background-color: transparent;
+  border: unset;
+  color: var(--color-white);
+  font-size: inherit;
+  width: 200px;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-con input::placeholder {
+  color: var(--color-secondary-white);
+}
+
+.input-con input:focus {
+  outline: unset;
+  width: 400px;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-con div {
+  border: 1px solid var(--color-nav-search-border-color);
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  color: var(--color-secondary-white);
+}
+
+.dropdown {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--color-white);
+  margin: 3px 0 0 3px;
+}
+
+.links {
+  margin-left: 20px;
+  align-items: center;
+}
+
+.links .link {
+  margin-right: 15px;
+}
+
+.links .link a {
+  color: var(--color-white);
+  text-decoration: unset;
+  font-weight: 600;
+}
+
+.links .link a:hover {
+  color: var(--color-secondary-white);
+}
+
+.notifications__profile {
+  align-items: center;
+}
+
+.notifications__profile summary:hover .dropdown {
+  border-top: 6px solid var(--color-secondary-white);
+}
+
+.notifications__profile summary {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.notifications__profile summary svg {
+  fill: var(--color-white);
+}
+
+.notifications__profile summary svg:hover {
+  fill: var(--color-secondary-white);
+}
+
+.notifications__profile .avatar {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px var(--color-avatar-border);
+  width: 20px;
+  height: 20px;
+  background-color: blanchedalmond;
+}
+
+.notifications__profile .avatar img {
+  display: none;
+}
+
+.hamburger svg {
+  fill: var(--color-white);
+}
+
+nav.scroll-nav {
+  border-bottom: 1px solid var(--color-border-primary) !important;
+}
+
+nav.scroll-nav .scroll-nav-content {
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.fullname,
+.username {
+  margin-left: 5px;
+}
+
+.tabs {
+  overflow-x: auto;
+}
+
+.tab {
+  color: var(--color-underlinenav-text-active);
+  outline: 1px dotted transparent;
+  outline-offset: -1px;
+  border-bottom: 2px solid transparent;
+  padding: 10px;
+}
+
+.tab span {
+  margin-left: 4px
+}
+
+.tab svg {
+  fill: #959da5;
+}
+
+.tab.active {
+  border-bottom-color: #f9826c !important;
+  font-weight: 600;
+}
+
+.tab.active svg {
+  fill: #32363b;
+}
+
+.tab:hover {
+  color: var(--color-underlinenav-text-hover);
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom-color: var(--color-border-tertiary);
+  outline: 1px dotted transparent;
+  outline-offset: -1px;
+  transition-timing-function: ease-out;
+  transition-duration: .12s;
+}
+
+.tab .counter {
+  margin-left: 4px;
+  color: var(--color-underlinenav-counter-text);
+  display: inline-block;
+  min-width: 20px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--color-counter-text);
+  text-align: center;
+  background-color: var(--color-counter-bg);
+  border: 1px solid transparent;
+  border-radius: 2em;
+}
+
+section .main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section .main-container .user-container img {
+  width: 260px;
+  height: 260px;
+  z-index: 1;
+}
+
+section .main-container .user-container {
+  margin-top: -32px;
+}
+
+section .main-container .user-container .avatar {
+  position: relative;
+}
+
+section .main-container .user-container .avatar .status {
+  position: absolute;
+  bottom: 0;
+  left: 93%;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 35px;
+  margin-left: -40px;
+  background-color: #fff;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 2em;
+}
+
+section .main-container .repositories-container {
+  width: 100%;
+}
+
+.disp-fullname {
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+.disp-username {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}
+
+.disp-bio {
+  font-size: 16px !important;
+  margin-top: 20px;
+  display: block;
+  font-weight: 400;
+}
+
+
+.profile-summary {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile-summary-scroll {
+  margin-left: 10%;
+}
+
+/* .input  {
+  align-items: center;
+  border: 1px solid var(--color-nav-search-border-color);
+  padding: 4px 8px;
+  margin-left: 20px;
+  font-size: inherit;
+  border-radius: 7px; */
+/* } */
+
+.search-repository #status-input div {
+  margin-right: 5px;
+}
+
+.search-repository input,
+.search-repository #status-input {
+  margin: 16px 0;
+  width: 100%;
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-text-primary);
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  border: 1px solid var(--color-input-border);
+  border-radius: 6px;
+  outline: none;
+  box-shadow: var(--color-shadow-inset);
+}
+
+.search-repository {
+  border-bottom: 1px solid var(--color-input-border);
+}
+
+.input input::placeholder {
+  color: #c8ced3;
+}
+
+.input input:focus {
+  outline: unset;
+  width: 400px;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-text {
+  width: fit-content;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-input-border);
+}
+
+section .main-container .repositories-container .repository {
+  border-bottom: 0.5px solid var(--color-border-primary);
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+section .main-container .repositories-container .repository .star-name {
+  align-items: center;
+}
+
+section .main-container .repositories-container .repository .star-name .repo-name {
+  color: var(--color-repo-name);
+  margin: unset;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section .main-container .repositories-container .repository .star-name .star-cont button svg {
+  margin-right: 5px;
+  fill: var(--color-repo-svg);
+}
+
+section .main-container .repositories-container .repository .star-name .star-cont button {
+  margin: unset;
+  padding: 5px 12px;
+  border-radius: 7px;
+  border: 1px solid var(--color-border-color);
+  background-color: #fafbfc;
+  box-shadow: 0px 0.5px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+section .main-container .repositories-container .repository .star-name .star-cont {
+  margin-left: auto;
+}
+
+section .main-container .repositories-container .repository .repo-details {
+  align-items: center;
+  font-size: 12px;
+  color: var(--color-secondary);
+  margin-top: 15px;
+}
+
+section .main-container .repositories-container .repository .repo-details div {
+  align-items: center;
+}
+
+section .main-container .repositories-container .repository .repo-details div svg {
+  margin-right: 4px !important;
+  fill: var(--color-repo-svg);
+}
+
+.language-container,
+.star-count,
+.members,
+.updated-at {
+  margin-right: 25px !important;
+}
+
+.language-colour {
+  height: 12px;
+  width: 12px;
+  margin-right: 4px;
+  background-color: red;
+  border-radius: 50%;
+}
