@@ -48,7 +48,7 @@ const request = (query, variables, callback) => {
         headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
-            Authorization: `bearer ${access_token}`,
+            Authorization: `Bearer ${access_token}`,
         },
         body,
     })
