@@ -1,4 +1,4 @@
-const access_token = `289ff0e2a61ce78be10ea05221122a863a8657d8`
+const access_token = `<YOUR_ACCESS_TOKEN>`
 
 const query = `query {
     viewer {
