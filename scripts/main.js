@@ -1,4 +1,4 @@
-const access_token = `<YOUR_ACCESS_TOKEN>`
+const access_token = `<YOUR ACCESS TOKEN>`
 
 const query = `query {
     viewer {
@@ -114,8 +114,8 @@ function initializeUI(data) {
         </div>
         <div class="repo-details d-flex">
             <div class="language-container d-flex">
-                <div class="language-colour" style="background: ${repo.languages.nodes[0].color}"></div>
-                <div class="language">${repo.languages.nodes[0].name}</div>
+                <div class="language-colour" style="background: ${repo.languages && repo.languages.nodes.length > 0 ? repo.languages.nodes[0].color : '#563d7c'}"></div>
+                <div class="language">${repo.languages && repo.languages.nodes.length > 0 ? repo.languages.nodes[0].name : ''}</div>
             </div>
             <div class="star-count  d-flex">
                 <div>
